@@ -34,3 +34,8 @@ thf = 360;
 dth = 0.01;
 
 plotOrbit(a, e, i, OM, om, th0, thf, dth, mu)
+
+
+%
+%   TEST
+%

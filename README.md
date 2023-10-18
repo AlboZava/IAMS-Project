@@ -14,5 +14,5 @@ Transformation from Keplerian parameters to cartesian coordinates.
 3D orbit plot
 
 ## Credits & Contributors
-- Matteo Piarulli
-- Alessandro Sala
++ Matteo Piarulli
++ Alessandro Sala

@@ -21,11 +21,6 @@
 
 function [rr, vv] = par2car(a, e, i, OM, om, th, mu)
 
-% i = i * pi / 180;
-% OM = OM * pi / 180;
-% om = om * pi / 180;
-% th = th * pi / 180;
-
 ROM = [cos(OM) sin(OM) 0;                                                   % Rotation of Ω around k
       -sin(OM) cos(OM) 0;
        0 0 1];

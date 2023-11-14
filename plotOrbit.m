@@ -18,17 +18,18 @@
 
 function plotOrbit(a, e, i, OM, om, th0, thf, dth, mu)
 
-n = (thf - th0) / dth;
+n = round((thf - th0) / dth);
 thv = linspace(th0, thf, n);
 rr = zeros(3, n);
 
 for j = 1 : n
-
+    %thv(j) = thv(j) * pi / 180;
     [rr(:, j), ~] = par2car(a, e, i, OM, om, thv(j), mu);
 end
 %disp(rr)
 
-
 plot3(rr(1, :), rr(2, :), rr(3, :))
 hold on
-earth_sphere('km')
+xlabel('X [km]');
+ylabel('Y [km]');
+zlabel('Z [km]');
